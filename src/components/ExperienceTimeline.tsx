@@ -87,7 +87,7 @@ export const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
                   </span>
                 </div>
 
-                {/* Description — short or full */}
+                {/* Description - short or full */}
                 {displayText && !compact && (
                   <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal pt-1">
                     {displayText}

@@ -179,7 +179,7 @@ export const EXPERIENCES: Experience[] = [
     duration: "Current Role",
     start: true,
     end: false,
-    description: "Building multiple production AI-powered backend systems as the sole developer — including an Intelligent Document Processing (IDP) platform with a multi-agent architecture for classification, quality validation, data extraction, and confidence-based verification. Also delivering other Gen AI and automation initiatives. Responsible for end-to-end backend development and AWS infrastructure (EC2, Lambda, S3, IAM, Docker) using Python and FastAPI, designing scalable automated workflows that significantly reduce manual effort and improve processing accuracy.",
+    description: "Building multiple production AI-powered backend systems as the sole developer - including an Intelligent Document Processing (IDP) platform with a multi-agent architecture for classification, quality validation, data extraction, and confidence-based verification. Also delivering other Gen AI and automation initiatives. Responsible for end-to-end backend development and AWS infrastructure (EC2, Lambda, S3, IAM, Docker) using Python and FastAPI, designing scalable automated workflows that significantly reduce manual effort and improve processing accuracy.",
     shortDescription: "Sole developer building multiple AI-powered backend systems including a multi-agent IDP platform (classification, extraction, verification) and other Gen AI initiatives. Full AWS infrastructure ownership using Python, FastAPI, and Docker."
   },
   {
@@ -192,7 +192,7 @@ export const EXPERIENCES: Experience[] = [
     duration: "2 Years",
     start: false,
     end: true,
-    description: "Designed and deployed 100+ secure microservices and REST APIs with role-based access control and API gateway integration across a multi-cloud environment. Optimized distributed backend processing by 30% through region- and product-level data aggregation. Built an event-driven Python automation system with distributed job scheduling to extract, process, and deliver financial data from multiple sources — reducing manual effort by 80% and ensuring low-latency, reliable pipelines.",
+    description: "Designed and deployed 100+ secure microservices and REST APIs with role-based access control and API gateway integration across a multi-cloud environment. Optimized distributed backend processing by 30% through region- and product-level data aggregation. Built an event-driven Python automation system with distributed job scheduling to extract, process, and deliver financial data from multiple sources - reducing manual effort by 80% and ensuring low-latency, reliable pipelines.",
     shortDescription: "Delivered 100+ secure REST APIs with RBAC across a multi-cloud environment. Achieved 30% backend performance boost and 80% reduction in manual operations via event-driven automation pipelines."
   }
 ];
@@ -254,7 +254,7 @@ export const SKILLS: Skill[] = [
 export const ACHIEVEMENTS: Achievement[] = [
   {
     id: "ach-1",
-    title: "NashLon Hackathon — 1st Place",
+    title: "NashLon Hackathon - 1st Place",
     subtitle: "Secured 1st position in NashLon hackathon organized by IEEE",
     icon: "🏆",
     color: "amber"

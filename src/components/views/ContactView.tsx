@@ -69,7 +69,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onDownloadResume, onSh
               </div>
             </div>
             <p className="text-xs text-zinc-400 leading-relaxed max-w-xl">
-              I am currently looking for full-time AI/SDE roles and freelance collaborations. Whether you have a project in mind, a job opportunity, or just want to connect—reach out!
+              I am currently looking for full-time AI/SDE roles and freelance collaborations. Whether you have a project in mind, a job opportunity, or just want to connect-reach out!
             </p>
           </div>
 

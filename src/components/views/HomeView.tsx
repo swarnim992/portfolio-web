@@ -59,7 +59,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </div>
 
           <p className="text-xs text-zinc-300 leading-relaxed font-normal">
-            Specializing in <strong className="text-white">Agentic AI, FastAPI microservices, and cloud-native backend architecture</strong>. Shipped multi-agent AI platforms and 100+ production REST APIs using Python, C++, Docker, and AWS — optimizing systems at scale.
+            Specializing in <strong className="text-white">Agentic AI, FastAPI microservices, and cloud-native backend architecture</strong>. Shipped multi-agent AI platforms and 100+ production REST APIs using Python, C++, Docker, and AWS - optimizing systems at scale.
           </p>
 
 
