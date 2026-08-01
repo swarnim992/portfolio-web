@@ -116,13 +116,16 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onSelectProject }) =
                 </div>
 
                 {/* Project Image Preview */}
-                <div className="relative aspect-video rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 flex items-center justify-center">
+                <div 
+                  className="relative aspect-video rounded-xl overflow-hidden border border-zinc-800 flex items-center justify-center"
+                  style={{ backgroundColor: proj.bgColor || '#09090b' }}
+                >
                   {proj.image ? (
                     <>
                       <img
                         src={proj.image}
                         alt={proj.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                         onError={(e) => {
                           (e.target as HTMLImageElement).style.display = 'none';
                         }}

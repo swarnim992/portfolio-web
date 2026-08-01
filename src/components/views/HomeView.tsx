@@ -169,11 +169,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   </div>
                 </div>
 
-                <div className="relative aspect-video rounded-lg overflow-hidden border border-zinc-800 bg-zinc-900">
+                <div 
+                  className="relative aspect-video rounded-lg overflow-hidden border border-zinc-800 flex items-center justify-center"
+                  style={{ backgroundColor: proj.bgColor || '#18181b' }}
+                >
                   <img
                     src={proj.image}
                     alt={proj.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = '/assets/project/portfolio.png';
                     }}

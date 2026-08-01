@@ -124,7 +124,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         {/* Footer Links */}
         <div className="p-6 border-t border-zinc-800 bg-zinc-950/60 flex flex-wrap items-center justify-between gap-4">
           <div className="text-xs text-zinc-500 font-chakra">
-            Built with {project.title.includes('FastAPI') || project.title.includes('Dealer') ? 'Python FastAPI' : 'Flutter & Clean Architecture'}
+            Built with {project.techStack || (project.title.includes('FastAPI') || project.title.includes('Dealer') ? 'Python FastAPI' : 'Flutter & Clean Architecture')}
           </div>
           <div className="flex items-center gap-3">
             {project.githubLink && (

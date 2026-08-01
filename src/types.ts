@@ -9,6 +9,8 @@ export interface Project {
   githubLink: string;
   demoVideoLink: string;
   category?: string;
+  bgColor?: string;
+  techStack?: string;
 }
 
 export interface Experience {

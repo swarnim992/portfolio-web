@@ -23,6 +23,34 @@ export const PROFILE = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "breaking-bad-habits",
+    title: "Breaking Bad Habits & Addiction",
+    description: "An AI-powered behavioral coaching platform that leverages Large Language Models (LLMs) to help users break harmful habits through personalized coaching, adaptive recovery plans, and progress analysis.",
+    image: `${ASSET_PREFIX}/project/breaking_bad_habits.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/chatgpt.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/typescript.svg`,
+    keyFeatures: "• AI Behavioral Coach: Integrated Groq LLM to generate personalized habit-reduction plans and recovery strategies.\n• Personalized AI Insights: Tailored recommendations and motivational feedback based on check-in history.\n• Intelligent Check-ins & Urge Support: Logs daily progress/cravings and responds with real-time coping techniques.\n• AI-Enhanced Progress Analytics: Combines habit tracking and streaks with AI-generated patterns and insights.",
+    githubLink: "https://github.com/swarnim992/breaking-bad-habits-and-addiction",
+    demoVideoLink: "",
+    category: "AI & Analytics",
+    bgColor: "#0c2417",
+    techStack: "Next.js, TypeScript & Groq LLM"
+  },
+  {
+    id: "washing-queue",
+    title: "Washing Queue",
+    description: "A full-stack hostel laundry management platform that digitizes washing machine scheduling with real-time queue tracking, automated queue progression, and multi-machine administration.",
+    image: `${ASSET_PREFIX}/project/washing_queue.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/nextjs.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/supabase.svg`,
+    keyFeatures: "• Real-time queue management for multiple washing machines.\n• Automated queue progression with inactivity handling.\n• Admin dashboard for machine and queue management.\n• Built with Next.js, TypeScript, and Supabase featuring secure authentication and real-time synchronization.",
+    githubLink: "https://github.com/swarnim992/SPJG_washing_queue",
+    demoVideoLink: "",
+    category: "Fullstack Web",
+    bgColor: "#ffffff",
+    techStack: "Next.js, TypeScript & Supabase"
+  },
+  {
     id: "globle-dealer",
     title: "Global Dealer Operations & Marketing Platform",
     description: "Global cloud-based dealer operations and marketing platform built using Python FastAPI and RESTful microservices.",
@@ -32,31 +60,9 @@ export const PROJECTS: Project[] = [
     keyFeatures: "• Developed 100+ secure Python REST APIs using FastAPI in a microservices architecture.\n• Implemented role-based access control and API gateway based request handling.\n• Improved backend performance by 30% through optimized regional and product-level data aggregation.\n• Deployed on cloud infrastructure with a focus on scalability, security, and high availability.",
     githubLink: "",
     demoVideoLink: "",
-    category: "Backend / Cloud"
-  },
-  {
-    id: "financial-app",
-    title: "Financial Mobile Application",
-    description: "Financial Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
-    image: `${ASSET_PREFIX}/project/quotestream1.png`,
-    flutterSvg: `${ASSET_PREFIX}/svg/flutter.svg`,
-    dartSvg: `${ASSET_PREFIX}/svg/dart.svg`,
-    keyFeatures: "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
-    githubLink: "",
-    demoVideoLink: "",
-    category: "Mobile App"
-  },
-  {
-    id: "rent-portal",
-    title: "Rent Portal",
-    description: "Built a Rent client portal using Django with role-based access and automated document processing, streamlining rental operations and financial workflows.",
-    image: `${ASSET_PREFIX}/project/rentroll.png`,
-    flutterSvg: `${ASSET_PREFIX}/svg/python.svg`,
-    dartSvg: `${ASSET_PREFIX}/svg/django.svg`,
-    keyFeatures: "• Role-based Access Control: Secure login system for Admins, Analysts, and Users.\n• OCI Integration: Safe file storage with automated Excel & PDF parsing.\n• Auto Interest Calculation: Boosted financial accuracy by 70% with dynamic computations.\n• Workflow Automation: Reduced manual effort, improving user efficiency significantly.",
-    githubLink: "",
-    demoVideoLink: "",
-    category: "Fullstack Web"
+    category: "Backend / Cloud",
+    bgColor: "#ffffff",
+    techStack: "Python FastAPI & Microservices"
   },
   {
     id: "financial-insights-dashboard",
@@ -68,7 +74,47 @@ export const PROJECTS: Project[] = [
     keyFeatures: "• Developed scalable APIs for real-time financial data processing.\n• AI-Driven Portfolio Analysis.\n• Scalable Backend Architecture.\n• Dynamic Data Visualization.",
     githubLink: "",
     demoVideoLink: "",
-    category: "AI & Analytics"
+    category: "AI & Analytics",
+    techStack: "FastAPI & Python"
+  },
+  {
+    id: "financial-app",
+    title: "Financial Mobile Application",
+    description: "Financial Mobile is a feature-rich stock market app built with Flutter, providing real-time financial data, portfolio management, and market insights on the go.",
+    image: `${ASSET_PREFIX}/project/quotestream1.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/flutter.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/dart.svg`,
+    keyFeatures: "• Real-time stock quotes, forex, and market updates.\n• Advanced Portfolio Management.\n• Interactive Charts & Watchlists.\n• Efficient State Management.",
+    githubLink: "",
+    demoVideoLink: "",
+    category: "Mobile App",
+    techStack: "Flutter & Clean Architecture"
+  },
+  {
+    id: "portfolio-web",
+    title: "Portfolio Website",
+    description: "Personal Developer Portfolio is a modern, responsive portfolio website built with React + Vite to showcase my expertise in AI engineering, backend development, and full-stack solutions. It highlights professional experience, technical skills, featured projects, achievements, and provides an interactive way for recruiters and clients to explore my work.",
+    image: `${ASSET_PREFIX}/project/portfolio-web.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/react.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/typescript.svg`,
+    keyFeatures: "• Modern React + Vite Architecture with a fast, responsive, and mobile-friendly user experience.\n• AI & Backend Focused Showcase featuring GenAI, FastAPI, cloud-native systems, microservices, and automation projects.\n• Interactive Project Portfolio highlighting real-world work, hackathons, achievements, technical skills, and coding profiles.\n• Professional Branding with seamless navigation, contact integration, and optimized performance for an engaging recruiter experience.",
+    githubLink: "https://github.com/swarnim992/portfolio-web",
+    demoVideoLink: "https://swarnimjain.netlify.app/",
+    category: "Frontend Web",
+    techStack: "React, Vite & TypeScript"
+  },
+  {
+    id: "rent-portal",
+    title: "Rent Portal",
+    description: "Built a Rent client portal using Django with role-based access and automated document processing, streamlining rental operations and financial workflows.",
+    image: `${ASSET_PREFIX}/project/rentroll.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/python.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/django.svg`,
+    keyFeatures: "• Role-based Access Control: Secure login system for Admins, Analysts, and Users.\n• OCI Integration: Safe file storage with automated Excel & PDF parsing.\n• Auto Interest Calculation: Boosted financial accuracy by 70% with dynamic computations.\n• Workflow Automation: Reduced manual effort, improving user efficiency significantly.",
+    githubLink: "",
+    demoVideoLink: "",
+    category: "Fullstack Web",
+    techStack: "Django & Python"
   },
   {
     id: "todo-springboot",
@@ -107,16 +153,17 @@ export const PROJECTS: Project[] = [
     category: "Automation & Tools"
   },
   {
-    id: "portfolio-website",
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase projects, skills, and experience. Made the website fully responsive across all platforms with smooth UI animations.",
+    id: "portfolio-flutter",
+    title: "Portfolio Website (Flutter)",
+    description: "A personal portfolio website built with Flutter to showcase projects, skills, and experience. Fully responsive across mobile and web with clean animations.",
     image: `${ASSET_PREFIX}/project/portfolio.png`,
-    flutterSvg: `${ASSET_PREFIX}/svg/react.svg`,
-    dartSvg: `${ASSET_PREFIX}/svg/javascript.svg`,
-    keyFeatures: "• Responsive bento-grid layout.\n• Interactive contact & social integrations.\n• One-click Resume download.\n• Smooth UI & Animations.",
+    flutterSvg: `${ASSET_PREFIX}/svg/flutter.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/dart.svg`,
+    keyFeatures: "• Responsive layout optimized for multiple device screens.\n• Interactive animations and theme customisation.\n• Fast page load times and seamless navigation.\n• Easy integrations for project lists and resume downloads.",
     githubLink: "https://github.com/swarnim992/swarnim_portfolio",
-    demoVideoLink: "https://swarnimjain.netlify.app/",
-    category: "Frontend Web"
+    demoVideoLink: "https://swarnimjainflutter.netlify.app/",
+    category: "Mobile & Web",
+    techStack: "Flutter & Dart"
   },
   {
     id: "moving-marble",
