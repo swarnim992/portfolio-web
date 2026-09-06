@@ -23,6 +23,34 @@ export const PROFILE = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "mcp-document-intelligence",
+    title: "MCP Document Intelligence",
+    description: "An MCP-based conversational interface for operating and managing Intelligent Document Processing workflows directly through AI chat. Users can inspect extraction results, troubleshoot failed fields, configure document schemas, and trigger extraction workflows without switching to a separate dashboard.",
+    image: `${ASSET_PREFIX}/project/MCP_IDP.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/python.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/anthropic.svg`,
+    keyFeatures: "• MCP-Powered IDP Operations: Exposes 17 purpose-built tools for document status, extraction analysis, schema management, document submission, and workflow control through AI assistants.\n• Interactive MCP Apps: Provides in-chat interfaces for file selection, extraction status, field-level results, evidence, pagination, and user actions.\n• Secure Permission & Cost Controls: Separates read, schema-write, and paid extraction capabilities with permission gating, budget controls, and Redis-backed state management.\n• Safe & Reliable Workflows: Implements dry-run validation, production write protection, graceful failure handling, and deliberately excludes destructive operations.\n• Context-Aware Large Result Export: Shares large result sets as Excel files instead of flooding the LLM context, keeping conversations efficient.",
+    githubLink: "",
+    demoVideoLink: "",
+    category: "MCP & AI",
+    bgColor: "#102a43",
+    techStack: "Python, MCP, GraphQL, AWS, Redis & AI"
+  },
+  {
+    id: "ai-powered-idp",
+    title: "AI-Powered Intelligent Document Processing (IDP)",
+    description: "A reusable AI-powered Intelligent Document Processing framework for extracting structured information from complex and unstructured documents such as agreements, contracts, and business documents. Applications define the fields they need while the framework manages the document processing and AI extraction workflow.",
+    image: `${ASSET_PREFIX}/project/IDP.png`,
+    flutterSvg: `${ASSET_PREFIX}/svg/python.svg`,
+    dartSvg: `${ASSET_PREFIX}/svg/graphql.svg`,
+    keyFeatures: "• Multi-Model AI Extraction: Uses multiple AI models to independently extract information and improve reliability.\n• Consensus-Based Validation: Compares model outputs and applies majority voting to identify reliable values.\n• Reusable Python Package: Provides a modular framework that can be integrated into multiple applications.\n• Configurable Field Extraction: Applications specify required fields while the framework handles the extraction workflow.\n• Complex Document Intelligence: Supports large and unstructured agreements, contracts, and business documents where accuracy is critical.",
+    githubLink: "",
+    demoVideoLink: "",
+    category: "AI & Analytics",
+    bgColor: "#102a43",
+    techStack: "Python, GraphQL, AWS & Multi-Agent AI"
+  },
+  {
     id: "breaking-bad-habits",
     title: "Breaking Bad Habits & Addiction",
     description: "An AI-powered behavioral coaching platform that leverages Large Language Models (LLMs) to help users break harmful habits through personalized coaching, adaptive recovery plans, and progress analysis.",

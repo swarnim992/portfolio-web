@@ -16,6 +16,7 @@ export const ProjectsView: React.FC<ProjectsViewProps> = ({ onSelectProject }) =
     'Mobile App',
     'Backend / Cloud',
     'AI & Analytics',
+    'MCP & AI',
     'Fullstack Web',
     'Backend Services',
     'Game / Flutter',
