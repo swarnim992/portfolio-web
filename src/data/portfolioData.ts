@@ -264,7 +264,7 @@ export const EXPERIENCES: Experience[] = [
     startTime: "Mar 2024",
     endTime: "Jan 2026",
     workType: "On Site",
-    duration: "2 Years",
+    duration: "1 Year, 11 Months",
     start: false,
     end: true,
     description: "Designed and deployed 100+ secure microservices and REST APIs with role-based access control and API gateway integration across a multi-cloud environment. Optimized distributed backend processing by 30% through region- and product-level data aggregation. Built an event-driven Python automation system with distributed job scheduling to extract, process, and deliver financial data from multiple sources - reducing manual effort by 80% and ensuring low-latency, reliable pipelines.",
@@ -434,10 +434,11 @@ export function getTotalExperienceYears(
 
 /**
  * Calculates dynamic duration string for a single experience record
- * E.g., "1.3 Years" or "1 Year, 4 Months"
+ * E.g., "1 Year, 4 Months"
  */
 export function formatSingleExperienceDuration(startTime: string, endTime: string): string {
-  const isCurrent = endTime.toLowerCase().includes('present') || endTime.toLowerCase().includes('current');
+  const normalizedEndTime = endTime.trim().toLowerCase();
+  const isCurrent = ['present', 'current', 'now', 'today'].includes(normalizedEndTime);
   const months = calculateExperienceMonths(startTime, endTime);
 
   const yrs = Math.floor(months / 12);
@@ -449,9 +450,7 @@ export function formatSingleExperienceDuration(startTime: string, endTime: strin
   } else if (mos === 0) {
     label = `${yrs} ${yrs === 1 ? 'Year' : 'Years'}`;
   } else {
-    // Clean decimal representation for professional brevity, e.g. "1.3 Years"
-    const decimalYrs = (months / 12).toFixed(1);
-    label = `${decimalYrs} Years`;
+    label = `${yrs} ${yrs === 1 ? 'Year' : 'Years'}, ${mos} ${mos === 1 ? 'Month' : 'Months'}`;
   }
 
   if (isCurrent) {
